@@ -6,10 +6,10 @@
 /* header */
 .header{
 	background-repeat: no-repeat;
-	background-position: center;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
+	background-position: top center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
 }
 .header__inner{
 	width: 100%;
@@ -21,6 +21,14 @@
 	.header__phone{
 		color: #FFF;
 		font-size: 45px;
+		
+		img{
+			width: 35px;
+			
+			svg{
+				fill: red;
+			}
+		}
 	}
 }
 .header__text{

@@ -17,4 +17,13 @@ $(function(){
     $('.social__inner').slideToggle();
   });
 
+/*  $('.burger-menu__dropdown-link').on('click', function(){
+    $('.burger-menu__dropdown').addClass('btt');
+  });*/
+
+/*  $('.burger-menu__dropdown-link').on('click', function(){
+    $('.burger-menu__dropdown>li').css('display','block');
+    $('.burger-menu__dropdown').css('display','none');
+  });*/
+
 });
