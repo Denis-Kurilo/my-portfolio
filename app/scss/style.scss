@@ -1,0 +1,45 @@
+@import "vars";
+@import "global";
+@import "fonts"; 
+@import "mouse-scroll-snippet";  
+ 
+/* header */
+.header{
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.header__inner{
+	width: 100%;
+	min-height: 180px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 250px;
+	.header__phone{
+		color: #FFF;
+		font-size: 45px;
+	}
+}
+.header__text{
+	color: #222;
+	&-title{
+		font-weight: 700;
+		font-size: 50px;
+		margin-bottom: 140px;
+	}
+
+	&-subtitle{
+		font-size: 30px;
+		text-align: left;
+		padding-left: 90px;
+		line-height: 35px;
+		margin-bottom: 130px;
+	}
+}
+/* header-end */
+
+//media
+@import "media";
