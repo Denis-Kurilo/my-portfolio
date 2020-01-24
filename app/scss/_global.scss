@@ -6,7 +6,7 @@ html{
 *::after{
     box-sizing: inherit;
 }
-html,
+html, 
 body{
   height: 100%;
   overflow-x: hidden;
@@ -103,7 +103,7 @@ li{
 }
 
 /* burger-menu */
- .burger-menu{
+.burger-menu{
   @keyframes checked-anim {
       to {
           width: 100%;
@@ -123,21 +123,18 @@ li{
   .burger-menu__list li, a {
       margin: 20px auto;
       color: #222;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 700;
       display: none;
       transform:translateX(50px);
   }
-  li {
-      width: 230px;
-      }
-  a:focus {
+  li {width: 230px;}
+  a:hover {
       display: block;
       color: #333;
-      background-color: #eee;
-      transition: all .5s;
+      transition: all .3s;
   } 
-
+  
   #trigger, #burger, #burger:before, #burger:after {
       position: absolute;
       top: 25px;
@@ -196,7 +193,29 @@ li{
       animation: not-checked-anim .1s forwards;
       transition: .1s;
   }
- 
+
+.burger-menu__dropdown-link{ 
+  img{
+    width: 15px;
+    height: 15px;
+    transform: rotate(90deg);
+  }
+  .arrows-rotate img{
+      transform: rotate(270deg);     
+    }
+}
+.burger-menu__list{
+  .burger-menu__dropdown{
+    position: relative;
+  li{
+    display: none;
+  }
+  &.active li{
+    display: block;
+    width: 250px;
+  }
+ }
+}
   #menu-toggle:checked + #trigger + #burger + .burger-menu__list {
       animation: checked-anim .2s linear forwards;
   }

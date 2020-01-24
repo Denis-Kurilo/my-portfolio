@@ -2,7 +2,7 @@ $(function(){
 //typed 
   var typed = new Typed(".hero-typed-text", {
       strings: [
-      "низкие цены.",
+      "низкие цены.", 
        "самые оптимальные сроки разработки.",
        "чистый код и адаптивная верстка.",
        "2 месяца бесплатной техподдержки."
@@ -17,13 +17,10 @@ $(function(){
     $('.social__inner').slideToggle();
   });
 
-/*  $('.burger-menu__dropdown-link').on('click', function(){
-    $('.burger-menu__dropdown').addClass('btt');
-  });*/
-
-/*  $('.burger-menu__dropdown-link').on('click', function(){
-    $('.burger-menu__dropdown>li').css('display','block');
-    $('.burger-menu__dropdown').css('display','none');
-  });*/
+  //dropdown-menu
+   $('.burger-menu__dropdown-link').on('click', function(){
+   $('.burger-menu__dropdown').toggleClass('active');
+   $('.burger-menu__dropdown-link>a').toggleClass('arrows-rotate');
+  });
 
 });
