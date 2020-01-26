@@ -25,15 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user:before {
+  content: "\f007";
+}
 .icon-sort-desc:before {
   content: "\f0dd";
 }
 .icon-sort-down:before {
   content: "\f0dd";
 }
+.icon-envelope:before {
+  content: "\f0e0";
+}
 .icon-angle-up:before {
   content: "\f106";
 }
 .icon-angle-down:before {
   content: "\f107";
+}
+.icon-paper-plane-o:before {
+  content: "\f1d9";
+}
+.icon-send-o:before {
+  content: "\f1d9";
+}
+.icon-volume-control-phone:before {
+  content: "\f2a0";
 }

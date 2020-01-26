@@ -1,132 +1,313 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-<head>  
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="keywords" content="Ключевые слова...">
-  	<meta name="description" content="Описание страницы...">
-	<title>Портфолио веб-разработчика | Курило Дениса</title>
-	<!-- FavIcons -->
-	<link rel="shortcut icon" href="images/favicon/favicon.png"  type="image/x-icon" />
-	<!-- fons -->
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700,900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.min.css">  
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Ключевые слова...">
+    <meta name="description" content="Описание страницы...">
+    <title>Портфолио веб-разработчика | Курило Дениса</title>
+    <!-- FavIcons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon" />
+    <!-- fons -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
 <![endif]-->
-	<!-- header -->
-	<header class="header" style="background-image: url(../images/bg/bg-header.jpg);">
-		<div class="container">
-			<div class="header__inner">
-				<div class="header__phone">
-					<a href="tel:89788059869">
-						<img src="images/icons/phone.svg" alt="">
-						8(978) 805-98-69
-					</a>
-				</div>
-			</div>
-			<div class="header__text">
-				<div class="header__text-title">Портфолио Web - разработчика</div>
-				<div class="header__text-subtitle">Что вы получите - 
-					<span class="hero-typed-text"></span>
-				</div>
-			</div>
-			<button class="btn btn--style" type="submit">Заказать услугу</button>
-			<div class="social">
-				<a class="link-click" href="#">...</a>
-				<div class="social__inner">
-					<ul class="social__list">
-						<li><a href="https://vk.com/denis_kurilo" target="_blank"><img src="images/icons/vk.svg" alt="Социальные сети"></a></li>
-						<li><a href="https://github.com/Denis-Kurilo" target="_blank"><img src="images/icons/github.svg" alt="Социальные сети"></a></li>
-						<li><a href="https://www.instagram.com/kurilo__denis/" target="_blank"><img src="images/icons/instagram.svg" alt="Социальные сети"></a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100024366126772" target="_blank"><img src="images/icons/facebook.svg" alt="Социальные сети"></a></li>
-					</ul>	
-				</div>
-			</div>	
-		</div>
-		<div id="arrow-nav">
-			<a href="#" class="mouse_scroll">
-			<div>
-				<span class="m_scroll_arrows unu"></span>
-				<span class="m_scroll_arrows doi"></span>
-				<span class="m_scroll_arrows trei"></span>
-			</div>
-			</a>
-		</div>
-	</header>
-	<!-- header-end -->
+    <!-- header -->
+    <header class="header" style="background-image: url(../images/bg/bg-header.jpg);">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__phone">
+                    <a href="tel:89788059869">
+                        <img src="images/icons/phone.svg" alt="">
+                        8(978) 805-98-69
+                    </a>
+                </div>
+            </div>
+            <div class="header__text">
+                <div class="header__text-title">Портфолио Web - разработчика</div>
+                <div class="header__text-subtitle">Что вы получите -
+                    <span class="hero-typed-text"></span>
+                </div>
+            </div>
+            <a href="#order" class="btn btn--style popup-link" type="submit">Заказать услугу</a>
+            <div class="social">
+                <a class="link-click" href="#">...</a>
+                <div class="social__inner">
+                    <ul class="social__list">
+                        <li><a href="https://vk.com/denis_kurilo" target="_blank"><img src="images/icons/vk.svg" alt="Социальные сети"></a></li>
+                        <li><a href="https://github.com/Denis-Kurilo" target="_blank"><img src="images/icons/github.svg" alt="Социальные сети"></a></li>
+                        <li><a href="https://www.instagram.com/kurilo__denis/" target="_blank"><img src="images/icons/instagram.svg" alt="Социальные сети"></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100024366126772" target="_blank"><img src="images/icons/facebook.svg" alt="Социальные сети"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="arrow-nav">
+            <a href="#top" rel='m_PageScroll2id' class="mouse_scroll">
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- header-end -->
+    <!-- navigation -->
+    <section class="navigation">
+        <nav class="burger-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label id="trigger" for="menu-toggle"></label>
+            <label id="burger" for="menu-toggle"></label>
+            <ul class="burger-menu__list">
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Опыт</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li class="burger-menu__dropdown-link">
+                    <a href="#">Услуги
+                        <img src="images/icons/arrow-down.svg" alt="">
+                    </a>
+                    <ul class="burger-menu__dropdown">
+                        <li><a href="#">Landin Page</a></li>
+                        <li><a href="#">Сайт визитка</a></li>
+                        <li><a href="#">Промо сайт</a></li>
+                        <li><a href="#">Тематический сайт</a></li>
+                        <li><a href="#">Персональный сайт</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div id="top" class="top-menu">
+            <div class="container">
+                <div class="top-menu__inner">
+                    <div class="logo">
+                        <img src="images/logo/logo.png" alt="">
+                    </div>
+                    <nav class="top-navigation">
+                        <div class="top-navigation__inner">
+                            <ul class="top-navigation__list">
+                                <li><a href="#top" rel='m_PageScroll2id'>Обо мне</a></li>
+                                <li><a href="#" rel='m_PageScroll2id'>Опыт</a></li>
+                                <li><a href="#" rel='m_PageScroll2id'>Портфолио</a></li>
+                                <li class="top-navigation__dropdown-link">
+                                    <a href="#">Услуги
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 491.996 491.996" xml:space="preserve">
+                                            <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+												L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+												c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+												c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+												C491.996,136.902,489.204,130.046,484.132,124.986z" />
+                                        </svg>
+                                    </a>
+                                    <ul class="top-navigation__dropdown">
+                                        <li><a href="#">Landin Page</a></li>
+                                        <li><a href="#">Сайт визитка</a></li>
+                                        <li><a href="#">Промо сайт</a></li>
+                                        <li><a href="#">Тематический сайт</a></li>
+                                        <li><a href="#">Персональный сайт</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" rel='m_PageScroll2id'>Блог</a></li>
+                                <li><a href="#" rel='m_PageScroll2id'>Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navigation-end -->
 	
-	<!-- navigation -->
-	<section class="navigation">
-		<nav class="burger-menu">
-			<input type="checkbox" id="menu-toggle"/>
-			<label id="trigger" for="menu-toggle"></label>
-			<label id="burger" for="menu-toggle"></label>
-			<ul class="burger-menu__list">
-				<li><a href="https://vk.com/denis_kurilo" target="_blank">Обо мне</a></li>
-				<li><a href="#">Опыт</a></li>
-				<li><a href="#">Портфолио</a></li>
-				<li class="burger-menu__dropdown-link">
-					<a href="#">Услуги
-						<img src="images/icons/next.png" alt="">
-					</a>
-					<ul class="burger-menu__dropdown">
-						<li><a href="#">Landin Page</a></li>
-						<li><a href="#">Сайт визитка</a></li>
-						<li><a href="#">Промо сайт</a></li>
-						<li><a href="#">Тематический сайт</a></li>
-						<li><a href="#">Персональный сайт</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-
-		<div class="top-menu">
-			<div class="container">
-				<nav class="top-navigation">
-					<div class="top-navigation__inner">
-						<ul class="top-navigation__list">
-							<li><a href="#">Обо мне</a></li>
-							<li><a href="#">Опыт</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Услуги</a></li>
-							<li><a href="#">Блог</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>	
-					</div>
-				</nav>	
+	<!-- about -->
+	<section class="about">
+		<div class="container">
+			<div class="about__title title">
+				<h3>Обо мне</h3>	
 			</div>
+			<div class="about-inner">
+				<div class="about-inner__img">
+					
+				</div>
+				<div class="about-inner__desk">
+					<div class="about-inner__desk-info">Приветствую Вас на моем сайте.</div>
+					<p>Я Курило Денис, занимаюсь web-разработкой сайтов. Сайты адаптивный и кросбраузерные. Серьезно подхожу к поставленным задачам и внимательно отношусь к качеству разрабатываемого продукта.</p>
+					<div class="about-inner__desk-border">
+						<div>В своих работах я применяю:</div>
+						<div>Front-end:</div>
+						(HTML/Pug, CSS/LESS/SASS, BootStrap4, JS/JQuery/Ajax)
+						<div>Back-end:</div>
+						(PHP / MySQL)
+						<div>Design</div>
+						(PhotoShop, Adobe illustrator, CorelDRAW)
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</section>
-	<!-- navigation-end -->
-	
+	<!-- about-end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/libs.min.js"></script>
-	<script src="js/main.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br id="top">
+    <div id="order" class="mfp-hide">
+        <h3 class="formTitle">Заполните форму заказа</h3>
+        <form class="orderForm" action="">
+            <div class="wrapInputFio">
+                <input class="inputFio" type="text" placeholder="Имя *" required>
+                <span class="icon-user" aria-hidden="true"></span>
+            </div>
+            <div class="wrapInputEmail">
+                <input class="inputEmail" type="email" placeholder="Email *" required>
+                <span class="icon-envelope" aria-hidden="true"></span>
+            </div>
+            <div class="wrapInputTel">
+                <input class="inputTel" type="tel" placeholder="Телефон">
+                <span class="icon-volume-control-phone" aria-hidden="true"></span>
+            </div>
+            <select class="services">
+                <option>Выберите услугу</option>
+                <option>Landin Page</option>
+                <option>Сайт визитка</option>
+                <option>Промо сайт</option>
+                <option>Тематический сайт</option>
+                <option>Персональный сайт</option>
+            </select>
+            <div class="wrapRadio">
+                <div class="blockRadioL">
+                    <div class="radioLTitle">Срок на разработку</div>
+                    <label><input type="radio" name="term"> Нужно срочно </label>
+                    <label><input class="termBtn" type="radio" name="term"> Я не спешу</label>
+                </div>
+                <div class="blockRadioR">
+                    <div class="radioLTitle">Есть ли у вас ТЗ</div>
+                    <label><input type="radio" name="tz">Да</label>
+                    <label><input class="termBtn" type="radio" name="tz">Нет</label>
+                </div>
+            </div>
+            <p class="radioDesk">Прежде чам отправить форму, скачайте и заполните техническое задание. После заполнение прикрепите ТЗ.</p>
+            <div class="wrapBtn">
+                <a href="download/brif.docx" class="btnL btnL--style" download>Скачать ТЗ</a>
+                <input type="file" id="upload" class="hide btnR">
+                <label for="upload" class="btnR">Прикрепить ТЗ</label>
+            </div>
+            <div class="wrapOrderFormTextarea">
+                <span class="icon-envelope"></span>
+                <textarea class="orderFormTextarea orderFormTextarea--height" name="message" id="message" placeholder="Введите сообщение"></textarea>
+            </div>
+            <div class="wrapSubmit wrapSubmit--position">
+                <input class="submit submit--margin" type="submit" value="Отправить">
+                <!-- <span class="icon-paper-plane-o" aria-hidden="true"></span> -->
+            </div>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script> -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
