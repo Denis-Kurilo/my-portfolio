@@ -36,10 +36,6 @@ $('input[type="file"], select').styler({
     // fileBrowse: "Choose File",
     // filePlaceholder: "No File Choosen"
 });
-//slide2id - плавная прокрутка по ссылкам внутри страницы
-  /*$("#top a, nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
-      highlightSelector:"nav a"
-  });*/
 
 (function($) {
   $(window).on("load", function() {
@@ -49,6 +45,21 @@ $('input[type="file"], select').styler({
     });
   });
 })(jQuery);
+/*$("#header a,nav a,a[href='#header'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+      highlightSelector:"nav a"
+  });*/
+
+//slick
+$('.portfolio-slider__inner').slick({
+  infinite: true,
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll:1,
+  arrows: true,
+  prevArrow: '<div class="prev icon-chevron-left"></div>',
+  nextArrow: '<div class="next icon-chevron-right"></div>',
+});
+
 });
 
 

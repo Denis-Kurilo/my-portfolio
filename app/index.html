@@ -21,7 +21,7 @@
 <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
 <![endif]-->
     <!-- header -->
-    <header class="header" style="background-image: url(../images/bg/bg-header.jpg);">
+    <header id="header" class="header" style="background-image: url(../images/bg/bg-header.jpg);">
         <div class="container">
             <div class="header__inner">
                 <div class="header__phone">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div id="arrow-nav">
-            <a href="#top" rel='m_PageScroll2id' class="mouse_scroll">
+            <a href="#navigation" rel='m_PageScroll2id' class="mouse_scroll">
                 <div>
                     <span class="m_scroll_arrows unu"></span>
                     <span class="m_scroll_arrows doi"></span>
@@ -61,16 +61,17 @@
         </div>
     </header>
     <!-- header-end -->
+
     <!-- navigation -->
-    <section class="navigation">
+    <section id="navigation" class="navigation">
         <nav class="burger-menu">
             <input type="checkbox" id="menu-toggle" />
             <label id="trigger" for="menu-toggle"></label>
             <label id="burger" for="menu-toggle"></label>
             <ul class="burger-menu__list">
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Опыт</a></li>
-                <li><a href="#">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skils">Опыт</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
                 <li class="burger-menu__dropdown-link">
                     <a href="#">Услуги
                         <img src="images/icons/arrow-down.svg" alt="">
@@ -87,18 +88,20 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        <div id="top" class="top-menu">
+        <div class="top-menu">
             <div class="container">
                 <div class="top-menu__inner">
                     <div class="logo">
-                        <img src="images/logo/logo.png" alt="">
+                    	<a href="#header" rel='m_PageScroll2id'>
+                    		<img src="images/logo/logo.png" alt="Логотип">
+                    	</a>
                     </div>
                     <nav class="top-navigation">
                         <div class="top-navigation__inner">
                             <ul class="top-navigation__list">
-                                <li><a href="#top" rel='m_PageScroll2id'>Обо мне</a></li>
-                                <li><a href="#" rel='m_PageScroll2id'>Опыт</a></li>
-                                <li><a href="#" rel='m_PageScroll2id'>Портфолио</a></li>
+                                <li><a href="#about" rel='m_PageScroll2id'>Обо мне</a></li>
+                                <li><a href="#skils" rel='m_PageScroll2id'>Опыт</a></li>
+                                <li><a href="#portfolio" rel='m_PageScroll2id'>Портфолио</a></li>
                                 <li class="top-navigation__dropdown-link">
                                     <a href="#">Услуги
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 491.996 491.996" xml:space="preserve">
@@ -129,7 +132,7 @@
     <!-- navigation-end -->
 	
 	<!-- about -->
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<div class="about__title title">
 				<h3>Обо мне</h3>	
@@ -156,6 +159,207 @@
 		</div>
 	</section>
 	<!-- about-end -->
+	
+	<!-- skils -->
+	<section id="skils" class="skils section">
+		<div class="skils-bg">
+			<div class="skils__title title">
+				<h3>Умение и навыки</h3>	
+			</div>
+		</div>
+		<div class="container">
+			<div class="card__inner">
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#imposition"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">Верстка</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>HTML5/Pug</li>
+							<li>CSS3/LESS/SCSS/SASS</li>
+							<li>Cross browser</li>
+							<li>Media queries</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#programming"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">Programming</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>JavaScript</li>
+							<li>Git</li>
+							<li>Gulp.js</li>
+							<li>PHP</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#frameworks"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">Frameworks</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>Bootstrap 4</li>
+							<li>jQuery</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#design"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">Дизайн</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>Adobe Photoshop</li>
+							<li>Adobe illustrator</li>
+							<li>CorelDraw</li>
+							<li>Figma</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#cms"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">CMS</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>Wordpress</li>
+							<li>MODX Revolution</li>
+							<li>Joomla</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card__item">
+					<div class="card__item-img">
+						<svg class="icons imposition">
+							<use xlink:href="images/icons/sprite.svg#analytics"></use>
+						</svg>
+					</div>
+					<div class="card__item-title">Веб-аналитика</div>
+					<div class="card__item-description">
+						<ul class="card__item-list">
+							<li>Яндекс.Метрика</li>
+							<li>Яндекс.Вебмастер</li>
+							<li>Яндекс Директ</li>
+							<li>Google Analytics</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!-- skils-end -->
+
+	<!-- portfolio -->
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio__title title">
+			<h3>Портфолио</h3>	
+		</div>
+		<div class="portfolio-slider__inner">
+			<div class="portfolio-slider__item">
+				<div class="portfolio-slider__img">
+					<img src="images/portfolio/1.jpg" alt="Портфолио">
+					<div class="portfolio-slider__img-hover">
+						<div class="portfolio-slider__title">Сайт визитка мини гостиница</div>
+						<ul class="portfolio-slider__slider-list">
+							<li>Тип сайта: Сайт визитка</li>
+							<li>Кол-во страниц: 7</li>
+							<li>Адаптивность: Да</li>
+							<li>Ошибка валидации: Нет</li>
+						</ul>		
+						<div class="portfolio-slider__button"><a href="#">Перейти к описанию</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-slider__item">
+				<div class="portfolio-slider__img">
+					<img src="images/portfolio/2.jpg" alt="Портфолио">
+					<div class="portfolio-slider__img-hover">
+						<div class="portfolio-slider__title">Сайт визитка мини гостиница</div>
+						<ul class="portfolio-slider__slider-list">
+							<li>Тип сайта: Сайт визитка</li>
+							<li>Кол-во страниц: 7</li>
+							<li>Адаптивность: Да</li>
+							<li>Ошибка валидации: Нет</li>
+						</ul>		
+						<div class="portfolio-slider__button"><a href="#">Перейти к описанию</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-slider__item">
+				<div class="portfolio-slider__img">
+					<img src="images/portfolio/3.jpg" alt="Портфолио">
+					<div class="portfolio-slider__img-hover">
+						<div class="portfolio-slider__title">Сайт визитка мини гостиница</div>
+						<ul class="portfolio-slider__slider-list">
+							<li>Тип сайта: Сайт визитка</li>
+							<li>Кол-во страниц: 7</li>
+							<li>Адаптивность: Да</li>
+							<li>Ошибка валидации: Нет</li>
+						</ul>		
+						<div class="portfolio-slider__button"><a href="#">Перейти к описанию</a></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-slider__item">
+				<div class="portfolio-slider__img">
+					<img src="images/portfolio/4.jpg" alt="Портфолио">
+					<div class="portfolio-slider__img-hover">
+						<div class="portfolio-slider__title">Сайт визитка мини гостиница</div>
+						<ul class="portfolio-slider__slider-list">
+							<li>Тип сайта: Сайт визитка</li>
+							<li>Кол-во страниц: 7</li>
+							<li>Адаптивность: Да</li>
+							<li>Ошибка валидации: Нет</li>
+						</ul>		
+						<div class="portfolio-slider__button"><a href="#">Перейти к описанию</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#order" class="btn btn--style btn--folio popup-link" type="submit">Заказать сайт</a>
+	</section>
+	<!-- portfolio-end -->
+	
+	<!-- contacts -->
+	<section class="contacts section">
+		<div class="container">
+			<div class="contacts__title title">
+				<h3>Связаться со мной</h3>	
+			</div>
+			<div class="contacts__inner">
+				
+			</div>
+		</div>
+	</section>
+	<!-- contacts-end -->
+	
+	
 
     <br>
     <br>
@@ -252,7 +456,7 @@
     <br>
     <br>
     <br>
-    <br id="top">
+    <br>
     <div id="order" class="mfp-hide">
         <h3 class="formTitle">Заполните форму заказа</h3>
         <form class="orderForm" action="">

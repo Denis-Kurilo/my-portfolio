@@ -24,6 +24,9 @@ body {
     font-size: 15px;
     line-height: 24px;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
 
 a {
     display: inline-block;
@@ -45,6 +48,9 @@ textarea{
 }
 .clearfix:after{
   clear: both;
+}
+.section{
+    margin: 100px 0;
 }
 
 /* .wrapper{
@@ -90,6 +96,7 @@ textarea{
     border-radius: 5px 0 0 5px;
     transition: all .5s;
     box-shadow: 0 0px 8px rgba(3, 169, 244, 0.7);
+    z-index: 100;
 
     .link-click {
         font-size: 22px;
@@ -172,7 +179,7 @@ textarea{
         height: 5px;
         transition: .2s ease;
         cursor: pointer;
-        z-index: 11;
+        z-index: 1010;
     }
 
     #trigger {
@@ -224,10 +231,10 @@ textarea{
         height: 110px;
         background-color: #fff;
         border-bottom-left-radius: 100%;
-        box-shadow: 0 0px 10px rgba(3,169,244, 0.5);
+        box-shadow: 0 0px 20px rgba(3,169,244, 0.6);
         animation: not-checked-anim .1s forwards;
         transition: .1s;
-        z-index: 10;
+        z-index: 1000;
     }
 
     .burger-menu__dropdown-link {
