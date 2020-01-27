@@ -24,7 +24,13 @@ body {
     font-size: 15px;
     line-height: 24px;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -40,16 +46,20 @@ li {
     padding: 0;
     list-style: none;
 }
-input[type="submit"]{
-  cursor: pointer;
+
+input[type="submit"] {
+    cursor: pointer;
 }
-textarea{
-  resize: none;
+
+textarea {
+    resize: none;
 }
-.clearfix:after{
-  clear: both;
+
+.clearfix:after {
+    clear: both;
 }
-.section{
+
+.section {
     margin: 100px 0;
 }
 
@@ -151,7 +161,7 @@ textarea{
     a {
         margin: 20px auto;
         color: #222;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 700;
         display: none;
         transform: translateX(50px);
@@ -231,7 +241,7 @@ textarea{
         height: 110px;
         background-color: #fff;
         border-bottom-left-radius: 100%;
-        box-shadow: 0 0px 20px rgba(3,169,244, 0.6);
+        box-shadow: 0 0px 20px 8px rgba(3, 169, 244, 0.7);
         animation: not-checked-anim .1s forwards;
         transition: .1s;
         z-index: 1000;
@@ -239,8 +249,8 @@ textarea{
 
     .burger-menu__dropdown-link {
         img {
-            width: 15px;
-            height: 15px;
+            width: 18px;
+            height: 18px;
         }
 
         .arrows-rotate img {
