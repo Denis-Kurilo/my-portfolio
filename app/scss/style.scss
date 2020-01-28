@@ -120,7 +120,9 @@
 
 .logo {
     img {
-        padding-top: 5px;
+        padding-top: 12px;
+        width: 210px;
+        // height: 150px;
     }
 }
 
@@ -131,7 +133,7 @@
     background-size: cover;
     width: 1920px;
     width: 100%;
-    min-height: 230px;
+    min-height: 245px;
 }
 
 .top-navigation__inner {
@@ -332,6 +334,7 @@
     border: 1px solid #ccc;
     border-radius: 7px;
     transition: all .3s;
+    box-shadow: 0px 6px 7px 0px rgba(0, 0, 0, 0.5);
 }
 
 .wrapSubmit input[type=submit]:hover {
@@ -784,11 +787,11 @@
 }
 
 .prev:before {
-    left: 80px;
+    left: 60px;
 }
 
 .next:before {
-    right: 80px;
+    right: 60px;
 }
 
 .prev:hover:before {
