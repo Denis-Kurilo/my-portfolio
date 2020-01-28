@@ -1,4 +1,5 @@
 $(function() {
+    
     //typed 
     var typed = new Typed(".hero-typed-text", {
         strings: [
@@ -37,6 +38,7 @@ $(function() {
         // filePlaceholder: "No File Choosen"
     });
 
+    //прокрутка
     (function($) {
         $(window).on("load", function() {
             $("a[rel='m_PageScroll2id']").mPageScroll2id({
@@ -45,9 +47,7 @@ $(function() {
             });
         });
     })(jQuery);
-    /*$("#header a,nav a,a[href='#header'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
-          highlightSelector:"nav a"
-      });*/
+
 
     //slick
     $('.portfolio-slider__inner').slick({
@@ -60,23 +60,6 @@ $(function() {
         nextArrow: '<div class="next icon-chevron-right"></div>'
     });
 
-    //Animate arrow-top
-/*$(function (){
-  $("#arrow-top").hide();
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 300) {
-      $("#arrow-top").fadeIn(1000);
-    }else{
-      $("#arrow-top").fadeOut();
-    }
-  });
 
-  $("#arrow-top a").click(function(){
-    $("body, html").animate({
-      scrollTop:0
-    }, 100);
-    return false;
-  }); 
-});*/
 
 });
