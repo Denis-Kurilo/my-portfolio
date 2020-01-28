@@ -161,7 +161,9 @@ textarea {
     a {
         margin: 20px auto;
         color: #222;
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 1px;
         font-weight: 700;
         display: none;
         transform: translateX(50px);
@@ -249,8 +251,8 @@ textarea {
 
     .burger-menu__dropdown-link {
         img {
-            width: 18px;
-            height: 18px;
+            width: 15px;
+            height: 15px;
         }
 
         .arrows-rotate img {
@@ -268,7 +270,7 @@ textarea {
 
             &.active li {
                 display: block;
-                width: 250px;
+                width: 270px;
             }
         }
     }

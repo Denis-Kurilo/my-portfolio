@@ -1,8 +1,8 @@
 @import "vars";
 @import "global";
 @import "fonts";
-@import "mouse-scroll-snippet";
 @import "heading.scss";
+@import "mouse-scroll-snippet";
 
 /* header */
 .header {
@@ -16,7 +16,7 @@
 
 .header__inner {
     width: 100%;
-    min-height: 180px;
+    min-height: 180px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,10 +119,17 @@
 }
 
 .logo {
+  fill: #fff;
     img {
+<<<<<<< HEAD
         padding-top: 12px;
         width: 210px;
         // height: 150px;
+=======
+        padding-top: 5px;
+        width: 400px;
+        height: 220px;
+>>>>>>> 80b55572a9726b7b9ea1378f41c9ddc3abfe77f5
     }
 }
 
@@ -678,12 +685,13 @@
 
 /* portfolio */
 .portfolio {
-    background-image: url(../images/bg/bg-portfolio.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 650px;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .portfolio-slider__inner {
@@ -701,12 +709,13 @@
 .portfolio-slider__img {
     position: relative;
     width: 100%;
-    max-width: 500px;
-
-    img {
-        border-radius: 6px;
-    }
-
+    min-width: 500px;
+    height: 287px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+    border-radius: 6px;
 }
 
 .portfolio-slider__img-hover {
