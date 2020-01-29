@@ -39,14 +39,14 @@ $(function() {
     });
 
     //прокрутка
-    (function($) {
+    /*(function($) {
         $(window).on("load", function() {
             $("a[rel='m_PageScroll2id']").mPageScroll2id({
-                scrollSpeed: 1000,
-                scrollingEasing: "easeInCubic"
+                scrollSpeed: 900,
+                scrollingEasing: "easeInOutQuint"
             });
         });
-    })(jQuery);
+    })(jQuery);*/
 
 
     //slick
@@ -57,9 +57,9 @@ $(function() {
         slidesToScroll: 1,
         arrows: true,
         prevArrow: '<div class="prev icon-chevron-left"></div>',
-        nextArrow: '<div class="next icon-chevron-right"></div>'
+        nextArrow: '<div class="next icon-chevron-right"></div>',
     });
 
-
+    
 
 });

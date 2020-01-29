@@ -39,9 +39,7 @@ a.mouse_scroll {
     height: 16px;
 }
 
-.unu {
-    margin-top: 1px;
-}
+.unu {margin-top: 1px;}
 
 .unu,
 .doi,
@@ -78,10 +76,6 @@ a.mouse_scroll {
     border: 2px solid $colorSnipet;
     top: 170px;
     display: block;
-
-    // @media (min-width: 768px) {
-    //   display: block;
-    // }
 }
 
 .wheel {
@@ -120,79 +114,45 @@ a.mouse_scroll {
 }
 
 @-moz-keyframes mouse-wheel {
-    0% {
-        top: 1px;
-    }
+    0% {top: 1px;}
 
-    25% {
-        top: 2px;
-    }
+    25% {top: 2px;}
 
-    50% {
-        top: 3px;
-    }
+    50% {top: 3px;}
 
-    75% {
-        top: 2px;
-    }
+    75% {top: 2px;}
 
-    100% {
-        top: 1px;
-    }
+    100% {top: 1px;}
 }
 
 @-webkit-keyframes mouse-scroll {
-    0% {
-        opacity: 0;
-    }
+    0% {opacity: 0;}
 
-    50% {
-        opacity: .5;
-    }
+    50% {opacity: .5;}
 
-    100% {
-        opacity: 1;
-    }
+    100% {opacity: 1;}
 }
 
 @-moz-keyframes mouse-scroll {
-    0% {
-        opacity: 0;
-    }
+    0% {opacity: 0;}
 
-    50% {
-        opacity: .5;
-    }
+    50% {opacity: .5;}
 
-    100% {
-        opacity: 1;
-    }
+    100% {opacity: 1;}
 }
 
 @-o-keyframes mouse-scroll {
-    0% {
-        opacity: 0;
-    }
+    0% {opacity: 0;}
 
-    50% {
-        opacity: .5;
-    }
+    50% {opacity: .5;}
 
-    100% {
-        opacity: 1;
-    }
+    100% {opacity: 1;}
 }
 
 @keyframes mouse-scroll {
-    0% {
-        opacity: 0;
-    }
+    0% {opacity: 0;}
 
-    50% {
-        opacity: .5;
-    }
+    50% {opacity: .5;}
 
-    100% {
-        opacity: 1;
-    }
+    100% {opacity: 1;}
 }

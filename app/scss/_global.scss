@@ -1,6 +1,4 @@
-html {
-    box-sizing: border-box;
-}
+html {box-sizing: border-box;}
 
 *,
 *::before,
@@ -14,9 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-body {
-    min-width: 320px;
-}
+body {min-width: 320px;}
 
 body {
     font-family: 'Merriweather', serif;
@@ -47,21 +43,11 @@ li {
     list-style: none;
 }
 
-input[type="submit"] {
-    cursor: pointer;
-}
+input[type="submit"] {cursor: pointer;}
 
-textarea {
-    resize: none;
-}
+textarea {resize: none;}
 
-.clearfix:after {
-    clear: both;
-}
-
-.section {
-    margin: 100px 0;
-}
+.clearfix:after {clear: both;}
 
 /* .wrapper{
   display: flex;
@@ -79,6 +65,8 @@ textarea {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.section {margin: 100px 0;}
 
 .btn {
     padding: 10px 15px;
@@ -126,9 +114,7 @@ textarea {
         transition: all .3s;
 
         &:hover,
-        &:focus {
-            transform: scale(1.2);
-        }
+        &:focus {transform: scale(1.2);}
 
         img {
             width: 30px;
@@ -153,9 +139,7 @@ textarea {
         }
     }
 
-    ul.burger-menu__list {
-        padding-top: 100px;
-    }
+    ul.burger-menu__list {padding-top: 100px;}
 
     .burger-menu__list li,
     a {
@@ -169,9 +153,7 @@ textarea {
         transform: translateX(50px);
     }
 
-    li {
-        width: 230px;
-    }
+    li {width: 230px;}
 
     a:hover {
         display: block;
@@ -255,18 +237,14 @@ textarea {
             height: 15px;
         }
 
-        .arrows-rotate img {
-            transform: rotate(180deg);
-        }
+        .arrows-rotate img {transform: rotate(180deg);}
     }
 
     .burger-menu__list {
         .burger-menu__dropdown {
             position: relative;
 
-            li {
-                display: none;
-            }
+            li {display: none;}
 
             &.active li {
                 display: block;
@@ -280,18 +258,12 @@ textarea {
     }
 
     #menu-toggle:checked+#trigger~.burger-menu__list>li,
-    a {
-        display: block;
-    }
+    
+    a {display: block;}
 
     [type="checkbox"]:not(:checked),
     [type="checkbox"]:checked {
         display: none;
     }
 }
-
-/* a.mPS2id-highlight-first{
- background-color: red;
-} */
-
 /* burger-menu-end */

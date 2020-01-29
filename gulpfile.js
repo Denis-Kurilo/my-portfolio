@@ -30,7 +30,8 @@ gulp.task('style', function(){
 			'node_modules/slick-carousel/slick/slick.css',
 			'node_modules/magnific-popup/dist/magnific-popup.css',
 			'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
-			'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css'
+			'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
+			'node_modules/animate.css/animate.css'
 		])
 	.pipe(concat('libs.min.css'))
 	.pipe(cssmin())
@@ -53,7 +54,7 @@ gulp.task('js', function(){
 			'node_modules/typed.js/lib/typed.js',
 			'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 			'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-			'node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js'
+			'node_modules/wow.js/dist/wow.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
