@@ -21,12 +21,13 @@
     <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
     <![endif]-->
     <!-- header -->
+   
     <header id="header" class="header" style="background-image: url(../images/bg/bg-header.jpg);">
         <div class="container">
             <div class="header__inner">
-                <div class="header__phone">
+                <div class="header__phone wow fadeInDown" data-wow-duration="2s">
                     <a href="tel:89788059869">
-                        <img src="images/icons/phone.svg" alt="">
+                        <img class="wow tada infinite" src="images/icons/phone.svg" alt="" data-wow-duration="2s" data-wow-delay="2s">
                         8(978) 805-98-69
                     </a>
                 </div>
@@ -51,7 +52,7 @@
             </div>
         </div>
         <div id="arrow-nav">
-            <a href="#navigation" rel='m_PageScroll2id' class="mouse_scroll">
+            <a href="#navigation" class="mouse_scroll">
                 <div>
                     <span class="m_scroll_arrows unu"></span>
                     <span class="m_scroll_arrows doi"></span>
@@ -64,10 +65,16 @@
     <!-- navigation -->
     <section id="navigation" class="navigation">
         <nav class="burger-menu">
-            <input type="checkbox" id="menu-toggle" />
+            <div class="menu__btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <!-- <input type="checkbox" id="menu-toggle" />
             <label id="trigger" for="menu-toggle"></label>
-            <label id="burger" for="menu-toggle"></label>
-            <ul class="burger-menu__list">
+            <label id="burger" for="menu-toggle"></label> -->
+            <!-- <ul class="burger-menu__list">
                 <li><a href="#about">Обо мне</a></li>
                 <li><a href="#skils">Опыт</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
@@ -85,13 +92,13 @@
                 </li>
                 <li><a href="#">Блог</a></li>
                 <li><a href="#contacts">Контакты</a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="top-menu">
             <div class="container">
                 <div class="top-menu__inner">
                     <div class="logo">
-                        <a href="#header" rel='m_PageScroll2id'>
+                        <a href="#header">
                             <img src="images/logo/logo.svg" alt="Логотип">
                         </a>
                     </div>
@@ -132,13 +139,13 @@
     <!-- about -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about__title title">
+            <div class="about__title title wow fadeInDown" data-wow-duration="2s">
                 <h3>Обо мне</h3>
             </div>
             <div class="about-inner">
-                <div class="about-inner__img">
+                <div class="about-inner__img wow fadeInLeft" data-wow-duration="1s">
                 </div>
-                <div class="about-inner__desk">
+                <div class="about-inner__desk wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                     <div class="about-inner__desk-info">Приветствую Вас на моем сайте.</div>
                     <p>Я Курило Денис, занимаюсь web-разработкой сайтов. Сайты адаптивный и кросбраузерные. Серьезно подхожу к поставленным задачам и внимательно отношусь к качеству разрабатываемого продукта.</p>
                     <div class="about-inner__desk-border">
@@ -158,13 +165,13 @@
     <!-- skils -->
     <section id="skils" class="skils section">
         <div class="skils-bg">
-            <div class="skils__title title">
+            <div class="skils__title title wow fadeIn" data-wow-duration="3s">
                 <h3>Умение и навыки</h3>
             </div>
         </div>
         <div class="container">
             <div class="card__inner">
-                <div class="card__item">
+                <div class="card__item wow zoomInLeft" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#imposition"></use>
@@ -180,7 +187,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__item">
+                <div class="card__item wow zoomIn" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#programming"></use>
@@ -196,7 +203,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__item">
+                <div class="card__item wow zoomInRight" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#frameworks"></use>
@@ -210,7 +217,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__item">
+                <div class="card__item wow zoomInLeft" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#design"></use>
@@ -226,7 +233,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__item">
+                <div class="card__item wow zoomIn" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#cms"></use>
@@ -241,7 +248,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card__item">
+                <div class="card__item wow zoomInRight" data-wow-duration="1s">
                     <div class="card__item-img">
                         <svg class="icons imposition">
                             <use xlink:href="images/icons/sprite.svg#analytics"></use>
@@ -263,7 +270,7 @@
     <!-- skils-end -->
     <!-- portfolio -->
     <section id="portfolio" class="portfolio" style="background-image: url(../images/bg/bg-portfolio.jpg);">
-        <div class="portfolio__title title">
+        <div class="portfolio__title title wow fadeIn" data-wow-duration="2s">
             <h3>Портфолио</h3>
         </div>
         <div class="portfolio-slider__inner">
@@ -344,11 +351,11 @@
     <!-- contacts -->
     <section id="contacts" class="contacts section">
         <div class="container">
-            <div class="contacts__title title">
+            <div class="contacts__title title wow fadeIn" data-wow-duration="2s">
                 <h3>Связаться со мной</h3>
             </div>
             <div class="contacts__inner">
-                <div class="contacts__adress">
+                <div class="contacts__adress wow fadeInLeft" data-wow-duration="2s">
                     <div class="contacts__adress-text">
                         Если Вы хотите задать вопрос, сообщить об ошибках воспользуйтесь формой обратной связи.
                     </div>
@@ -377,7 +384,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="contacts__form">
+                <div class="contacts__form wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                     <form class="form">
                         <input class="fio" type="text" placeholder="Введите имя">
                         <input class="email" type="email" placeholder="Введите email" required="email адрес не правльно введен">
@@ -394,6 +401,11 @@
         </div>
     </section>
     <!-- contacts-end -->
+    
+        <a id="arrow-top" class="arrow-top" href="#header">
+            <span class="m_scroll_arrows doi"></span>
+        </a>    
+   
     <!-- footer -->
     <footer class="footer">
         <div class="footer__text">
@@ -458,5 +470,4 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

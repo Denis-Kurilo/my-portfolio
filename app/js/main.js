@@ -1,5 +1,4 @@
 $(function() {
-    
     //typed 
     var typed = new Typed(".hero-typed-text", {
         strings: [
@@ -11,6 +10,21 @@ $(function() {
         typeSpeed: 80,
         backSpeed: 40,
         loop: true
+    });
+
+    //burger-menu
+    $('.menu__btn').on('click', function(){
+        if('.menu__btn'){
+
+          $('.burger-menu').addClass('active');  
+        }else{
+          // $('.burger-menu').removeClass('active');  
+
+        }
+      
+          
+      
+        
     });
 
     $('.link-click').on('click', function(e) {
@@ -38,17 +52,6 @@ $(function() {
         // filePlaceholder: "No File Choosen"
     });
 
-    //прокрутка
-    /*(function($) {
-        $(window).on("load", function() {
-            $("a[rel='m_PageScroll2id']").mPageScroll2id({
-                scrollSpeed: 900,
-                scrollingEasing: "easeInOutQuint"
-            });
-        });
-    })(jQuery);*/
-
-
     //slick
     $('.portfolio-slider__inner').slick({
         infinite: true,
@@ -60,6 +63,33 @@ $(function() {
         nextArrow: '<div class="next icon-chevron-right"></div>',
     });
 
-    
+    //wow.js
+    wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       200,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+    )
+    wow.init();
+
+    //scroll
+
+    $('a[href^="#"]').click(function(){
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000);
+    });
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 250) {
+            $("#arrow-top").addClass('active');
+        }else{
+            $("#arrow-top").removeClass('active');
+        }
+    });
+
 
 });

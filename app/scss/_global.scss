@@ -9,12 +9,12 @@ html {box-sizing: border-box;}
 html,
 body {
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {min-width: 320px;}
 
 body {
+    overflow-x: hidden;
     font-family: 'Merriweather', serif;
     font-weight: 400;
     font-size: 15px;
@@ -94,7 +94,7 @@ textarea {resize: none;}
     border-radius: 5px 0 0 5px;
     transition: all .5s;
     box-shadow: 0 0px 8px rgba(3, 169, 244, 0.7);
-    z-index: 100;
+    z-index: 100;    
 
     .link-click {
         font-size: 22px;
@@ -124,7 +124,50 @@ textarea {resize: none;}
 }
 
 /* burger-menu */
-.burger-menu {
+.burger-menu{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+    .menu__btn{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        position: fixed; 
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        div{
+            background-color: #000;
+            height: 3px;
+            & + div{
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &.active{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+/* .burger-menu {
     @keyframes checked-anim {
         to {
             width: 100%;
@@ -249,6 +292,7 @@ textarea {resize: none;}
             &.active li {
                 display: block;
                 width: 270px;
+                border-left: 1px solid;
             }
         }
     }
@@ -265,5 +309,5 @@ textarea {resize: none;}
     [type="checkbox"]:checked {
         display: none;
     }
-}
+} */
 /* burger-menu-end */

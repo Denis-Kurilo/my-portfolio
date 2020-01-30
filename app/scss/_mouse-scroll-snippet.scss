@@ -156,3 +156,77 @@ a.mouse_scroll {
 
     100% {opacity: 1;}
 }
+
+
+/* arrow-top */
+.arrow-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    transform: scale(0);
+    background-color: $blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(3, 169, 244, 0.8);
+    border: 1px solid rgba(#fff, .3);
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    
+    &.active{
+        right: 20px;
+        transform: scale(1);
+        transition: all .4s;
+    }
+    
+    &:hover,
+    &:focus{
+        box-shadow: none;
+    }
+    span{
+        transform: rotate(225deg);
+        margin-top: 10px;
+        margin-right: 5px;
+        border-right: 2px solid $colorSnipetArrow-topRight;
+        border-bottom: 2px solid $colorSnipetArrow-topLeft;
+    }
+}
+
+
+
+
+
+
+
+
+/* .wrap-arrow{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+.arrow-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(146,178,78,0.7);
+    position: absolute;
+    top: -100px;
+    right: 60px;
+    transition: all 0.2s ease-in;
+    border: 1px solid rgba(255,255,255,0.7);
+    
+    &:hover{background-color: rgba(0,122,189,0.7);}
+}
+
+.mouse_scroll{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -20%);
+} */
