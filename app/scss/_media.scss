@@ -1,0 +1,20 @@
+@media(max-width: 1700px) {
+	.header__inner .header__phone{
+		margin-top: -15px;
+		font-size: 40px;
+		
+		&-name{
+			font-size: 35px;
+		}
+	}
+}
+@media(max-width: 1200px){
+	.header__text{
+		&-title{
+			font-size: 40px;
+		}
+		&-subtitle{
+			font-size: 25px;
+		}
+	}
+}

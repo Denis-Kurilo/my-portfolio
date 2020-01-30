@@ -43,6 +43,7 @@
     &-title {
         font-weight: 700;
         font-size: 50px;
+        line-height: 65px;
         margin-bottom: 140px;
     }
 
@@ -250,7 +251,7 @@
     border-radius: 0 0 10px 10px;
     display: none;
     width: 100%;
-    min-width: 250px;
+    max-width: 250px;
 
 
     li {
@@ -684,7 +685,7 @@
 .portfolio-slider__img {
     position: relative;
     width: 100%;
-    min-width: 500px;
+    max-width: 500px;
     height: 287px;
     background-repeat: no-repeat;
     background-position: center;
