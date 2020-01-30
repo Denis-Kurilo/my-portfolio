@@ -14,18 +14,24 @@ $(function() {
 
     //burger-menu
     $('.menu__btn').on('click', function(){
-        if('.menu__btn'){
-
-          $('.burger-menu').addClass('active');  
-        }else{
-          // $('.burger-menu').removeClass('active');  
+       $('.burger-menu').toggleClass('active');    
+       $('body').toggleClass('activs');       
+    });
+    $('.burger-menu__list li a').on('click', function(){
+        $('.burger-menu').removeClass('active'); 
+        $('body').removeClass('activs');       
+    });
+    $(document).mouseup(function (e){
+        var div = $(".burger-menu"); 
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) { 
+            $('.burger-menu').removeClass('active'),
+            $('body').removeClass('activs');    
 
         }
-      
-          
-      
-        
     });
+
+    
 
     $('.link-click').on('click', function(e) {
         e.preventDefault();
@@ -76,7 +82,6 @@ $(function() {
     wow.init();
 
     //scroll
-
     $('a[href^="#"]').click(function(){
         let target = $(this).attr('href');
         $('html, body').animate({

@@ -127,7 +127,7 @@ textarea {resize: none;}
 .burger-menu{
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: #fff;
     position: fixed;
     top: 0;
     right: 0;
@@ -136,6 +136,9 @@ textarea {resize: none;}
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    transition: all .4s;
+    box-shadow: 0 0px 20px 8px rgba(3, 169, 244, 0.4);
+    
     
     .menu__btn{
         display: block;
@@ -146,20 +149,110 @@ textarea {resize: none;}
         right: 20px;
         z-index: 10;
         div{
-            background-color: #000;
-            height: 3px;
+            background-color: #232323;
+            height: 5px;
             & + div{
                 margin-top: 5px;
             }
         }
     }
 
+    //menu
+    .burger-menu__list{
+        display: none;
+        position: absolute;
+        top: 150px;
+        left: auto;
+        right: auto;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .burger-menu__list li,
+    a {
+        color: #222;
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        transform: translateX(50px);
+        
+        &:hover,
+        &:focus{
+            color: $blue;
+        }
+    }
+
+    .burger-menu__dropdown-link {
+        div{
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+
+        .arrows-rotate img {transform: rotate(180deg);}
+    }
+
+    .burger-menu__list {
+        .burger-menu__dropdown {
+            position: relative;
+
+            li {
+                display: none;
+            }
+
+            &.active li {
+                display: block;
+            }
+        }
+    }
+
+    //click btn
     &.active{
         width: 90%;
         height: 90%;
+        box-shadow: 0 0px 20px 8px rgba(3, 169, 244, 0.8);
+        
+        .burger-menu__list{
+            display: block;
+        }
+        
+        .menu__btn{
+            margin-top: -10px;
+            div{
+                background-color: #232323;
+                transition: all .3s;
+                margin-top: 20px;
+                transform: rotate(360deg);
+            }
+            .line1{
+                display: block;
+                width: 22px;
+                margin-bottom: -20px;
+                margin-left: 16px;
+                transform: rotate(21deg);
+            }
+            .line2{
+                display: block;
+                width: 38px;
+            }
+            .line3{
+                display: block;
+                display: block;
+                width: 22px;
+                transform: rotate(157deg);
+                margin-top: 1px;
+                margin-left: 16px;
+            }
+        }
     }
 }
-
+.activs{
+    overflow: hidden;
+}
 
 
 
@@ -184,7 +277,7 @@ textarea {resize: none;}
 
     ul.burger-menu__list {padding-top: 100px;}
 
-    .burger-menu__list li,
+        .burger-menu__list li,
     a {
         margin: 20px auto;
         color: #222;

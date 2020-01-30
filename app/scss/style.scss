@@ -25,9 +25,14 @@
     .header__phone {
         color: #FFF;
         font-size: 45px;
+        margin-top: 40px;
         // pointer-events: none;
         
-        img {width: 35px;
+        img {width: 35px;}
+        &-name{
+            font-size: 40px;
+            line-height: 30px;
+            padding-top: 30px;
         }
     }
 }
@@ -176,10 +181,53 @@
         }
     }
 }
+.top-navigation__dropdown-link div{
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background-color: $blue;
+                opacity: 0;
+                transition: all .2s;
+                border-radius: 2px;
+            }
+
+            &::after {
+                content: "\f0dd";
+                position: absolute;
+                top: -10px;
+                left: -15px;
+                right: 0;
+                margin: 0 auto;
+                width: 1px;
+                height: 10px;
+                color: $blue;
+                font-family: 'icomoon';
+                font-size: 30px;
+                opacity: 0;
+                transition: all .2s;
+            }
+            &:hover {
+
+                &::before,
+                &::after {opacity: 1;}
+            }
+        }
+
 
 //top navigation dropdown
 .top-navigation__dropdown-link {
     position: relative;
+    
+    div{
+        cursor: pointer;
+        color: #FFF;
+        padding: 45px 18px;
+        font-size: 20px;
+    }
 
     svg {
         fill: #fff;
@@ -220,7 +268,7 @@
 }
 
 .top-navigation__dropdown>li a {
-    transition: all .3s;
+    transition: all .2s;
 
     &:before,
     &:after {
@@ -761,12 +809,17 @@
 }
 
 .contacts__adress-info {
-    
     margin-bottom: 20px;
-
     a {
         font-size: 17px;
-        padding-left: 27px;
+        margin-left: 27px;
+        transition: all .3s;
+        
+        &:hover{
+            border-bottom: 1px dotted $blue;
+            margin-left: 27px;
+            width: 250px;
+        }
     }
 }
 
