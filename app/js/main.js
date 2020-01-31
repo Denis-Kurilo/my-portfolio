@@ -15,23 +15,21 @@ $(function() {
     //burger-menu
     $('.menu__btn').on('click', function(){
        $('.burger-menu').toggleClass('active');    
-       $('body').toggleClass('activs');       
+       $('body').toggleClass('active-hidden');       
     });
     $('.burger-menu__list li a').on('click', function(){
         $('.burger-menu').removeClass('active'); 
-        $('body').removeClass('activs');       
+        $('body').removeClass('active-hidden');       
     });
     $(document).mouseup(function (e){
         var div = $(".burger-menu"); 
         if (!div.is(e.target) 
             && div.has(e.target).length === 0) { 
             $('.burger-menu').removeClass('active'),
-            $('body').removeClass('activs');    
+            $('body').removeClass('active-hidden');    
 
         }
     });
-
-    
 
     $('.link-click').on('click', function(e) {
         e.preventDefault();
@@ -59,14 +57,14 @@ $(function() {
     });
 
     //slick
-    $('.portfolio-slider__inner').slick({
+    $('#portfolio-slider__inner').slick({
         infinite: true,
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
         prevArrow: '<div class="prev icon-chevron-left"></div>',
-        nextArrow: '<div class="next icon-chevron-right"></div>',
+        nextArrow: '<div class="next icon-chevron-right"></div>'
     });
 
     //wow.js

@@ -176,6 +176,7 @@ textarea {resize: none;}
         letter-spacing: 1px;
         font-weight: 700;
         transform: translateX(50px);
+        text-align: left;
         
         &:hover,
         &:focus{
@@ -250,7 +251,7 @@ textarea {resize: none;}
         }
     }
 }
-.activs{
+.active-hidden{
     overflow: hidden;
 }
 
