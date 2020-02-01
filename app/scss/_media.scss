@@ -159,6 +159,17 @@
 	.contacts.section{
 		margin-bottom: 50px;
 	}
+	.portfolio{
+		min-height: auto;
+		.portfolio__title{
+			margin-bottom: 50px;
+		}
+	    .btn{
+	        top: -10px;
+	        bottom: 0;
+	        margin-bottom: 10px;
+	    }
+	}
 }
 @media(max-width: 600px){
 	#order{
@@ -235,6 +246,25 @@
 		font-size: 20px;
 		line-height: 28px;
 	}
+	.portfolio-slider__img{
+		max-width: 100%;
+		min-height: 315px;
+	}
+	.slick-slide{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.portfolio{
+		min-height: auto;
+		.portfolio__title{
+			margin-bottom: 30px;
+		}
+	    .btn{
+	        top: -25px;
+	        bottom: 0;
+	        margin-bottom: 0px;
+	    }
+	}
 }
 @media(max-width: 480px){
 	.header__text{
@@ -292,8 +322,8 @@
 			top: 30px;
 			
 			.burger-menu__dropdown-link img{
-				width: 13px;
-				height: 13px;
+				width: 11px;
+				height: 11px;
 			}
 			
 			.burger-menu__dropdown{
@@ -306,8 +336,8 @@
 			}
 		}
 		.burger-menu__list li a, .burger-menu__list li div{
-			font-size: 18px;
-			line-height: 30px;
+			font-size: 16px;
+			line-height: 25px;
 		}
 	}
 	.burger-menu.active .menu__btn{
@@ -319,4 +349,25 @@
 	.footer{
 		font-size: 16px;
 	}
+	.portfolio-slider__img{
+		min-height: 260px;
+	}
+	.portfolio-slider__img-hover{
+		min-height: 260px;
+	}
+}
+@media(max-width: 410px){
+	.portfolio-slider__img-hover{
+		.portfolio-slider__title{
+		font-size: 16px;
+		}
+		.portfolio-slider__slider-list{
+			padding: 15px 0 0px 20px;
+		}
+		.portfolio-slider__button a{
+			font-size: 14px;
+			display: block;
+		}
+	}
+	
 }

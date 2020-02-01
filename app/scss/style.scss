@@ -699,12 +699,13 @@
     position: relative;
     width: 100%;
     max-width: 500px;
-    height: 287px;
+    min-height: 287px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 20;
     border-radius: 6px;
+    margin: 0 auto;
 }
 
 .portfolio-slider__img-hover {
@@ -736,6 +737,7 @@
     padding: 0;
     padding: 15px 0 10px 70px;
     color: #FFF;
+    text-align: left;
 }
 
 .portfolio-slider__button {
@@ -763,16 +765,8 @@
     }
 }
 //slick-slider
-.slick-initialized .slick-slide {
-    // display: flex;
-    // justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .prev:before,
 .next:before {
-    // position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -788,6 +782,45 @@
 
 .prev:hover:before {color: $blue;}
 .next:hover:before {color: $blue;}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+     & li+li{
+        margin-left: 5px;
+    }
+    button{
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        font-size: 0;
+        border: none;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        
+        &:focus{
+            outline-color: transparent; 
+            border-radius: 50%; 
+        } 
+    }
+    li{
+        &.slick-active{
+            button{
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.portfolio{
+    .btn{
+        top: 60px;
+        bottom: 0;
+    }
+}
+
 /* portfolio-end */
 
 /* contacts */

@@ -63,8 +63,39 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
+        speed: 1000,
         prevArrow: '<div class="prev icon-chevron-left"></div>',
-        nextArrow: '<div class="next icon-chevron-right"></div>'
+        nextArrow: '<div class="next icon-chevron-right"></div>',
+
+        responsive: [
+        {
+          breakpoint: 1540,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 1030,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '200px'
+          }
+        }
+    ]
     });
 
     //wow.js
@@ -74,7 +105,7 @@ $(function() {
       animateClass: 'animated', // default
       offset:       200,          // default
       mobile:       true,       // default
-      live:         true        // default
+      live:         true
     }
     )
     wow.init();
