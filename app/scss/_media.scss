@@ -170,20 +170,99 @@
 	        margin-bottom: 10px;
 	    }
 	}
+	//animation
+	.about,
+	.skils,
+	.portfolio,
+	.contacts{
+		.fadeIn,
+		.fadeInDown{
+			animation-duration: 1s !important;
+		}
+	}
+	.about-inner{
+		.fadeIn{
+			animation-duration: 1s !important;
+			animation-delay: 0s !important;
+		}
+	}
+	.card__inner{
+		.zoomInLeft,
+		.zoomIn,
+		.zoomInRight{
+			animation-duration: 1s !important;
+		}
+	}
+	.contacts__inner{
+		.fadeInLeft,
+		.fadeIn{
+			animation-duration: 1s !important;
+			animation-delay: 0s !important;
+		}
+	}
+	//animation-end
+
+	//form popup
+	#order{
+		.formTitle{
+			font-size: 18px;
+		}	
+	}
+	.orderForm{
+		.radioDesk{
+			display: none;
+		}
+		.wrapBtn{
+			display: none;
+		}
+		.wrapInputFio, 
+		.wrapInputEmail, 
+		.wrapInputTel, 
+		.wrapSubmit, 
+		.wrapOrderFormTextarea {
+			font-size: 18px;
+			
+			span{
+				top: 10px;
+			}
+			input{
+				font-size: 16px;
+				height: 40px;
+				
+				&::placeholder{
+					font-size: 16px;
+				}
+			}
+			textarea{
+				font-size: 16px;
+				
+				&::placeholder{
+					font-size: 16px;
+				}
+			}
+		}
+		.services{
+			height: 40px;
+		}
+		.jq-selectbox__select{
+			height: 40px;
+		}
+		.jq-selectbox__trigger{
+			top: 5px;
+		}
+		.jq-selectbox__dropdown{
+			top: 37px;
+		}
+		.jq-selectbox .jq-selectbox__select-text {
+		    margin-top: -3px;
+		    font-size: 16px;
+		}
+	}
 }
 @media(max-width: 600px){
 	#order{
 		.formTitle{
 			font-size: 18px;
-		}
-		.orderForm{
-			input{
-				height: 40px;
-				
-				span{
-					top: 9px;
-				}
-			}
 		}
 	}
 	
@@ -355,6 +434,15 @@
 	.portfolio-slider__img-hover{
 		min-height: 260px;
 	}
+
+	#order{
+		.wrapRadio{
+			font-size: 12px;
+		}
+		.radioLTitle{
+			font-size: 14px;
+		}
+	}
 }
 @media(max-width: 410px){
 	.portfolio-slider__img-hover{
@@ -369,5 +457,15 @@
 			display: block;
 		}
 	}
-	
+	#order{
+		.wrapRadio,
+		.blockRadioR{
+			display: block;
+			text-align: left;
+		}
+		.blockRadioL{
+			padding-left: 0;
+			margin-bottom: 10px;
+		}
+	}
 }

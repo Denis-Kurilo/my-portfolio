@@ -110,6 +110,8 @@ $(function() {
     )
     wow.init();
 
+   
+
     //scroll
     $('a[href^="#"]').click(function(){
         let target = $(this).attr('href');
@@ -124,6 +126,4 @@ $(function() {
             $("#arrow-top").removeClass('active');
         }
     });
-
-
 });
