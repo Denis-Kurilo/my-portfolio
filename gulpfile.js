@@ -54,7 +54,8 @@ gulp.task('js', function(){
 			'node_modules/typed.js/lib/typed.js',
 			'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 			'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-			'node_modules/wow.js/dist/wow.js'
+			'node_modules/wow.js/dist/wow.js',
+			'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())

@@ -10,7 +10,7 @@
     <!-- FavIcons -->
     <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon" />
     <!-- fons -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700%7CMerriweather:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="btn__wrapper">
-                <a href="#order" class="btn btn--style popup-link" type="submit">Заказать услугу</a>    
+                <a href="#order" class="btn btn--style popup-link">Заказать услугу</a>    
             </div>
             <div class="social">
                 <a class="link-click" href="#">...</a>
@@ -350,7 +350,7 @@
                 </div>
             </div>
         </div>
-        <a href="#order" class="btn btn--style btn--folio popup-link" type="submit">Заказать сайт</a>
+        <a href="#order" class="btn btn--style btn--folio popup-link">Заказать сайт</a>
     </section>
     <!-- portfolio-end -->
 
@@ -393,13 +393,18 @@
                 <div class="contacts__form wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                     <form class="form">
                         <input class="fio" type="text" placeholder="Введите имя">
-                        <input class="email" type="email" placeholder="Введите email" required="email адрес не правльно введен">
+                        <input class="email" type="email" placeholder="Введите email" required>
                         <select class="dropdown">
                             <option value="">Вопрос?</option>
                             <option value="">Жалоба</option>
                             <option value="">Прочее</option>
                         </select>
-                        <textarea class="textarea" name="message" id="" placeholder="Введите сообщение"></textarea>
+                        <textarea class="textarea" name="message" placeholder="Введите сообщение"></textarea>
+                        <label class="label-checkbox label-checkbox--mt">
+                            <input class="checkbox-person" type="checkbox">
+                            Согласны на обработку 
+                            <a href="#" target="_blank" cheaked>Персональных данных</a>
+                        </label>
                         <input class="submit" type="submit" value="Отправить">
                     </form>
                 </div>
@@ -407,9 +412,9 @@
         </div>
     </section>
     <!-- contacts-end -->
-        <a id="arrow-top" class="arrow-top" href="#header">
-            <span class="m_scroll_arrows doi"></span>
-        </a>    
+    <a id="arrow-top" class="arrow-top" href="#header">
+        <span class="m_scroll_arrows doi"></span>
+    </a>    
     <!-- footer -->
     <footer class="footer">
         <div class="footer__text">
@@ -422,7 +427,7 @@
     <!-- footer-end -->
     <div id="order" class="mfp-hide">
         <h3 class="formTitle">Заполните форму заказа</h3>
-        <form class="orderForm" action="">
+        <form class="orderForm">
             <div class="wrapInputFio">
                 <input class="inputFio" type="text" placeholder="Имя *" required>
                 <span class="icon-user" aria-hidden="true"></span>
@@ -432,7 +437,7 @@
                 <span class="icon-envelope" aria-hidden="true"></span>
             </div>
             <div class="wrapInputTel">
-                <input class="inputTel" type="tel" placeholder="Телефон">
+                <input class="inputTel" type="tel" id="phone" placeholder="+8(___) ___-__-__">
                 <span class="icon-volume-control-phone" aria-hidden="true"></span>
             </div>
             <select class="services">
@@ -465,6 +470,13 @@
                 <span class="icon-envelope"></span>
                 <textarea class="orderFormTextarea orderFormTextarea--height" name="message" id="message" placeholder="Введите сообщение"></textarea>
             </div>
+
+            <label class="label-checkbox label-checkbox--mt">
+                <input class="checkbox-person" type="checkbox">
+                Согласны на обработку 
+                <a href="#" target="_blank" cheaked>Персональных данных</a>
+            </label>
+
             <div class="wrapSubmit wrapSubmit--position">
                 <input class="submit submit--margin" type="submit" value="Отправить">
             </div>
