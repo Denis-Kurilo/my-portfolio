@@ -3,7 +3,7 @@
 		margin-top: -15px;
 		font-size: 40px;
 		
-		&-name{
+		&-name{ 
 			font-size: 35px;
 		}
 	}
@@ -99,10 +99,28 @@
 	}
 	.services__aside-list li a{
 		font-size: 16px;
-    	line-height: 20px;
+    	line-height: 25px;
 	}
 	.services__aside-box{
 		max-width: 230px;
+	}
+	.services__inner,
+	.works__inner{
+		display: block;
+	}
+	.services__consultation{
+		display: none;
+	}
+	
+	.services__content,
+	.works__content{
+		margin-left: 0;
+	}
+	.services__aside-box,
+	.services__aside,
+	.works__aside-box,
+	.works__aside{
+		max-width: 100%;
 	}
 	/* page-end */
 }
@@ -295,30 +313,13 @@
 		}
 	}
 	/* page-services */
-	.services__consultation{
-		display: none;
-	}
-	.services__inner,
-	.works__inner{
-		display: block;
-	}
-	.services__content,
-	.works__content{
-		margin-left: 0;
-	}
-	.services__aside-box,
-	.services__aside,
-	.works__aside-box,
-	.works__aside{
-		max-width: 100%;
-		text-align: center;
-	}
+	
 	.services__content-title,
 	.works__content-title{
 		font-size: 22px;
 	}
 	.services__content .services__suptitle-list{
-		margin-left: 0;
+		margin-left: 5px;
 	}
 	.services__content p{
 		font-size: 14px;
@@ -332,7 +333,6 @@
 			line-height: 23px;
 			margin-top: 0;	
 		}
-		
 	}
 	.portfolio__card{
 		height: 400px;
@@ -432,6 +432,9 @@
 	}
 }
 @media(max-width: 480px){
+	.container{
+		padding: 0 5px;
+	}
 	.header__text{
 		&-title{
 			font-size: 16px;
@@ -526,6 +529,11 @@
 			font-size: 12px;
 		}
 		.radioLTitle{
+			font-size: 14px;
+		}
+	}
+	.services__suptitle-list{
+		li{
 			font-size: 14px;
 		}
 	}

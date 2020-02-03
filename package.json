@@ -23,6 +23,7 @@
     "jquery-form-styler": "^2.0.2",
     "jquery.maskedinput": "^1.4.1",
     "magnific-popup": "^1.1.0",
+    "modernizr": "^3.8.0",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.11",
