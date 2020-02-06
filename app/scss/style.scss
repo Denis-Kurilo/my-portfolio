@@ -5,8 +5,7 @@
 @import "mouse-scroll-snippet";
 
 /* header */
-.header {
-    background-image: url("../images/bg/bg-header.webp"); 
+.header { 
     // background-image: image("../images/bg/bg-header.webp" format('webp'), "../images/bg/bg-header.jpg");
     background-color: #CECECE;
     background-repeat: no-repeat;
@@ -16,7 +15,6 @@
     text-align: center;
     position: relative;
 }
-
 
 .header__inner {
     width: 100%;
@@ -69,7 +67,6 @@
     bottom: 100px;
     left: 0;
     right: 0;
-    // right: 300px;
     margin: 0 auto;  
 }
 
@@ -579,6 +576,14 @@
     z-index: 3;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 1);
     border: 1px dotted rgba(#000, .7);
+    
+    img{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 310px;
+        height: 310px;
+    }
 
     &::before {
         content: "";

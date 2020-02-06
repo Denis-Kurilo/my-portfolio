@@ -6,7 +6,8 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer'),
-    cssmin = require('gulp-cssmin');
+    cssmin = require('gulp-cssmin'),
+    minifyjs = require('gulp-js-minify');
 
 gulp.task('clean', async function(){
 	del.sync('dist')
@@ -14,8 +15,8 @@ gulp.task('clean', async function(){
 
 gulp.task('scss',function(){
 	return gulp.src('app/scss/**/*.scss')
-		// .pipe(sass({outputStyle: 'compressed'}))
-		.pipe(sass({outputStyle: 'expanded'}))
+		.pipe(sass({outputStyle: 'compressed'}))
+		// .pipe(sass({outputStyle: 'expanded'}))
 		.pipe(autoprefixer({
 			overrideBrowserslist: ['last 8 versions']
 		}))
@@ -43,6 +44,13 @@ gulp.task('html',function(){
 	.pipe(browserSync.reload({stream:true}))
 });
 
+gulp.task('minify-js', function(){
+  gulp.src('app/js/main.js')
+    .pipe(minifyjs())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('./dist/js/'));
+});
+
 gulp.task('script',function(){
 	return gulp.src('app/js/*.js')
 	.pipe(browserSync.reload({stream:true}))
@@ -63,7 +71,6 @@ gulp.task('js', function(){
 	.pipe(browserSync.reload({stream:true}))
 });
 
-
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -77,7 +84,7 @@ gulp.task('export', function(){
 		.pipe(gulp.dest('dist'))
 	let buildCss = gulp.src('app/css/**/*.css')
 		.pipe(gulp.dest('dist/css'))
-	let buildJs = gulp.src('app/js/**/*.js')
+	let buildJs = gulp.src('app/js/**/libs.min.js')
 		.pipe(gulp.dest('dist/js'))
 	let buildFonts = gulp.src('app/fonts/**/*.*')
 		.pipe(gulp.dest('dist/fonts'))
@@ -91,6 +98,6 @@ gulp.task('watch',function(){
 	gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('build', gulp.series('clean', 'export'));
+gulp.task('build', gulp.parallel('clean','export','minify-js'));
 
 gulp.task('default',gulp.parallel('style','scss','js','browser-sync','watch'))

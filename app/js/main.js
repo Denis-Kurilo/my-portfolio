@@ -8,14 +8,14 @@ $(function() {
             "2 месяца бесплатной техподдержки."
         ],
         typeSpeed: 80,
-        backSpeed: 40,
+        backSpeed: 40, 
         loop: true
     });
 
     //social
      $('.link-click').on('click', function(e) {
         e.preventDefault();
-        $('.social__inner').slideToggle();
+        $('.social__inner').slideToggle();  
     });
 
     //burger-menu
