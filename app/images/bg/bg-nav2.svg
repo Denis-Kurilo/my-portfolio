@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 220" style="enable-background:new 0 0 1920 220;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#232323;stroke:#201600;stroke-miterlimit:10;}
-</style>
-<path class="st0" d="M1920.46,220c-320.16-28.01-640.31-42.01-960.46-42c-319.84,0.01-639.69,14.01-959.54,42
-	c0-73.33,0-146.67,0-220C320.3,26.35,640.15,39.53,960,39.54c320.16,0.01,640.31-13.17,960.46-39.54
-	C1920.46,73.33,1920.46,146.67,1920.46,220z"/>
-<path class="st0" d="M1024.15,311.85"/>
-</svg>
+<svg enable-background="new 0 0 1920 220" viewBox="0 0 1920 220" xmlns="http://www.w3.org/2000/svg"><path d="m1920.46 220c-320.16-28.01-640.31-42.01-960.46-42-319.84.01-639.69 14.01-959.54 42 0-73.33 0-146.67 0-220 319.84 26.35 639.69 39.53 959.54 39.54 320.16.01 640.31-13.17 960.46-39.54z" fill="#232323" stroke="#201600" stroke-miterlimit="10"/></svg>

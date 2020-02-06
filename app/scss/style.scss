@@ -6,6 +6,8 @@
 
 /* header */
 .header {
+    background-image: url("../images/bg/bg-header.webp"); 
+    // background-image: image("../images/bg/bg-header.webp" format('webp'), "../images/bg/bg-header.jpg");
     background-color: #CECECE;
     background-repeat: no-repeat;
     background-position: top center ;
@@ -15,13 +17,14 @@
     position: relative;
 }
 
+
 .header__inner {
     width: 100%;
     min-height: 180px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 
     .header__phone {
         color: #FFF;
@@ -45,7 +48,7 @@
         font-weight: 700;
         font-size: 50px;
         line-height: 65px;
-        margin-bottom: 140px;
+        margin-bottom: 100px;
     }
 
     &-subtitle {
@@ -63,7 +66,7 @@
 
 .btn__wrapper{
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     left: 0;
     right: 0;
     // right: 300px;
