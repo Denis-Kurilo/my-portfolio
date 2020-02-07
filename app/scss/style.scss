@@ -6,7 +6,6 @@
 
 /* header */
 .header { 
-    // background-image: image("../images/bg/bg-header.webp" format('webp'), "../images/bg/bg-header.jpg");
     background-color: #CECECE;
     background-repeat: no-repeat;
     background-position: top center ;
@@ -16,7 +15,7 @@
     position: relative;
 }
 
-.header__inner {
+.header__inner { 
     width: 100%;
     min-height: 180px; 
     display: flex;
